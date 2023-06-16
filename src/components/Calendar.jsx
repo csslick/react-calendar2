@@ -1,12 +1,10 @@
 import React from 'react'
 
-function Calendar() {
+function Calendar(props) {
+  // props에서 년-월-일 가져오기
+  let { year, month, date } = props;
   // 날짜 조회하기
   let d = new Date();
-  let year = d.getFullYear(); // 년도
-  let month = d.getMonth(); // 월
-  let date = d.getDate(); // 일
-  console.log(year, month, date);
 
   // 말일 구하기(다음 달 기준으로 조회해서 일값=0 하면 이번달 말일)
   let lastDate = new Date(year, month + 1, 0).getDate();
