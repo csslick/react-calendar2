@@ -5,6 +5,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 * {
@@ -27,6 +29,7 @@ ul {
 .calendar ul.date {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .calendar ul.date li {
@@ -43,4 +46,8 @@ ul {
   margin: 0;
   line-height: 40px;
   margin-right: 1rem;
+}
+
+.holyday {
+  color: #999;
 }

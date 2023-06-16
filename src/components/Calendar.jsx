@@ -33,9 +33,18 @@ function Calendar(props) {
                 <li 
                   key={i}
                   style={{
-                    backgroundColor: date === i + 1 ? 'red' : '',
+                    backgroundColor: 
+                      date === i + 1 &&
+                      month === d.getMonth() &&
+                      year === d.getFullYear()
+                        ? 'red' : '',
                     borderRadius: date === i + 1 ? '10px' : '0'
                   }}
+                  className={
+                    new Date(year, month, i + 1).getDay() === 0 ||
+                    new Date(year, month, i + 1).getDay() === 6
+                    ? 'holyday' : ''
+                  } 
                 >{i + 1}</li>
               )  
             })
