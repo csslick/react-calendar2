@@ -20,6 +20,7 @@ function Calendar(props) {
       </header>
       <main>
         <ul className='date'>
+          {/* 제목 추가 */}
           {
             Array(start_date).fill().map((_, i) => {
               return (
