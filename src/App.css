@@ -24,12 +24,13 @@ ul {
   width: 400px;
   padding: 1rem;
   padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .calendar ul.date {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .calendar ul.date li {

@@ -22,6 +22,16 @@ function Calendar(props) {
         <ul className='date'>
           {/* 제목 추가 */}
           {
+            ['일', '월', '화', '수', '목', '금', '토'].map((name, i) => {
+              return (
+                <li 
+                  key={i}
+                  style={i === 0 || i == 6 ? {'color': '#666'}: null }
+                >{name}</li>
+              )
+            })
+          }
+          {
             Array(start_date).fill().map((_, i) => {
               return (
                 <li key={i}></li>
